@@ -282,6 +282,10 @@ class _GameScreenState extends State<GameScreen> {
         });
       });
     }
+
+    // if isAiPlayer
+    // if _currentPlayer == 2
+    // pick random card from _cards.where((e)=>e.isFlipped == false && e.isMatched == false).toList()
   }
 
   // Build the game board
@@ -337,6 +341,7 @@ class _GameScreenState extends State<GameScreen> {
           const SizedBox(height: 30),
           const Text('Select difficulty:', style: TextStyle(fontSize: 18)),
           const SizedBox(height: 10),
+          // secenek -> 2 kisilik - 1 kisilik -> isAiPlayer = true
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
